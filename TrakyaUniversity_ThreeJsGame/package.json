@@ -1,0 +1,17 @@
+{
+  "name": "tarkayauni",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "express": "^4.18.1",
+    "three": "^0.141.0"
+  }
+}

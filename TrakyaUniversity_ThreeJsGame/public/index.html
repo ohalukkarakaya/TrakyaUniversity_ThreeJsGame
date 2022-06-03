@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<title>Trakya Üniversitesi GSF</title>
+		<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content="Trakya Üniversitesi, Güzel Sanatlar Fakültesi, Grafik Tasarımı, Bitirme Projesi" />
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #000;
+				color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+			#message{
+				position:absolute;
+				left: 50%;
+				top: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				font-family: 'Kavivanar', san-serif;
+				font-size: 40px;
+				width:80%;
+				max-width:280px;
+				padding: 15px 15px 50px 15px;
+				text-align: center;
+				display:none;
+				align-content: center;
+				justify-content: center;
+				background-color: aliceblue;
+				border: medium solid #3D455C;
+				border-radius: 20px;
+				color: #3D455C;
+				z-index: 99;
+			}
+			#message_ok{
+				position: absolute;
+				bottom: 10px;
+				padding: 10px 20px 10px 20px;
+				font-family: sans-serif;
+				font-size: 20px;
+				background-color: #3D455C;
+				color: #fff;
+				border-radius: 8px;
+				border: medium solid #696882;
+			}
+            
+			#camera-btn{
+				position: absolute;
+				right: 15px;
+				bottom: 15px;
+				width: 40px;
+				height: 40px;
+				border: none;
+				border-radius: 50%;
+				background:#3B53A2;
+				font-size: 25px;
+				color: #fff;
+			}
+			
+			#overlay{
+				position:absolute;
+				width: 100%;
+				height: 100%;
+				background: #000000;
+				z-index: 10;
+				opacity: 1;
+			}
+            
+			.fade-in {
+				animation-name: fade-in;
+				animation-duration: 2s;
+			}
+
+			@keyframes fade-in {
+				from {opacity: 1;}
+				to {opacity: 0;}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="overlay"></div>
+		<button id="camera-btn"><i class="fas fa-camera"></i></button>
+		<button id="action-btn"><i class="fas fa-hand-point-up"></i></button>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+		
+        <script src="../libs/three.min.js"></script>
+		<script src="../libs/inflate.min.js"></script>
+		<script src="../libs/FBXLoader.js"></script>
+		<script src="../libs/Detector.js"></script>
+		<script src="game.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function(){
+				const game = new Game();
+				window.game = game;//For debugging only
+			});
+		</script>
+	</body>
+</html>
+
+
