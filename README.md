@@ -3,8 +3,7 @@
  Models were made by Ekin Sercan Erçin. Three.js library used.
  
  
- You can try demo by the link below:
- trakyaunigsf.herokuapp.com/
+ You can try demo by the link below:  <br>  trakyaunigsf.herokuapp.com/
  
  
  
