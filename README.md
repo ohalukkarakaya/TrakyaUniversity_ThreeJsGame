@@ -1,6 +1,9 @@
 # TrakyaUniversity_ThreeJsGame
- A third-person game that allows you to walk around the campus of Trakya University, Faculty of Fine Arts.
- Models were made by Ekin Sercan Erçin. Three.js library used.
+ A third-person game which made with three.js library that allows you to walk around in the campus of Trakya University, Faculty of Fine Arts.
+ 3D odels were modeled by Ekin Sercan Erçin.
+ 
+ 
+ You can try demo by the link below:  <br>  trakyaunigsf.herokuapp.com/
  
  
  
